@@ -37,7 +37,7 @@ export default function HomePage() {
                   id="state"
                   className=" text-white outline-none font-bold bg-red-300"
                 >
-                  <option value="PE">PE</option>
+                  <option value="PE">MA</option>
                 </select>
               </div>
 
@@ -47,7 +47,7 @@ export default function HomePage() {
                   id="city"
                   className="bg-red-500 text-white text-center outline-none border-none font-bold "
                 >
-                  <option value="recife">Recife</option>
+                  <option value="recife">São Luís</option>
                 </select>
               </div>
             </div>
