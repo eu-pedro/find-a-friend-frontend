@@ -112,7 +112,7 @@ export default async function AnimalsPage() {
         </div>
       </nav>
 
-      <main className="flex-grow">
+      <main className="bg-[#FDECED] flex-grow pr-28 pl-8 pt-36">
         <header className="flex justify-between w-full">
           <p>Encontre 324 amigos na sua cidade</p>
 
@@ -121,16 +121,23 @@ export default async function AnimalsPage() {
           </select>
         </header>
 
-        <div className="grid  grid-cols-3">
-          <div className="w-[280px] h-[280px] bg-[#0D3B66]">
-            <header className="bg-orange-500">
+        <div className="grid grid-cols-3">
+          <div className="w-[280px] h-[209px] bg-white rounded-3xl px-1 pt-1 pb-4">
+            <header className="h-[135px] relative flex justify-center bg-[#e2b349] rounded-3xl">
               <Image
                 src="/images/dog.png"
-                width={200}
-                height={200}
+                fill
+                style={{
+                  objectFit: 'contain',
+                }}
                 alt="Imagem de cachorro"
+                blurDataURL="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcanaltech.com.br%2Fempresa%2Fgoogle%2F&psig=AOvVaw1MnacU9SUXQkEXKDWcE5gP&ust=1718305074968000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjGsK7f1oYDFQAAAAAdAAAAABAE"
+                placeholder="blur"
               />
             </header>
+            <div className="w-12 h-12 p-2 bg-white z-10">
+              <div className="relative w-full h-full bg-[#F4D35E] flex justify-center -mt-5 rounded-3xl"></div>
+            </div>
           </div>
         </div>
       </main>
