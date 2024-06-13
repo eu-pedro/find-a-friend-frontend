@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { AnimalCardDetails } from './_components/AnimalCardDetails'
+import { AnimalCard } from './_components/AnimalCard'
 
 export default async function AnimalsPage() {
   return (
@@ -125,147 +127,11 @@ export default async function AnimalsPage() {
           </select>
         </header>
 
-        <div className="grid grid-cols-4 gap-8">
-          <div className="cursor-pointer group transition w-[280px] h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4">
-            <header className="h-[135px] relative flex justify-center bg-[#e2b349] rounded-3xl">
-              <Image
-                src="/images/dog.png"
-                fill
-                style={{
-                  objectFit: 'contain',
-                }}
-                alt="Imagem de cachorro"
-                blurDataURL="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcanaltech.com.br%2Fempresa%2Fgoogle%2F&psig=AOvVaw1MnacU9SUXQkEXKDWcE5gP&ust=1718305074968000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjGsK7f1oYDFQAAAAAdAAAAABAE"
-                placeholder="blur"
-              />
-            </header>
-            <div className="flex items-center flex-col">
-              <div className="trasition relative outline outline-white w-12 h-12 z-10 bg-[#F4D35E] group-hover:outline-[#0D3B66] group-hover:bg-[#F15156] flex justify-center rounded-xl -mt-5">
-                <Image
-                  src="/icons/icon-card-details.svg"
-                  alt="Ícone cachorro"
-                  width={15}
-                  height={15.56}
-                />
-              </div>
-              <span className="text-[#0D3B66] text-lg font-bold group-hover:text-white transition-all">
-                Alfredo
-              </span>
-            </div>
-          </div>
-
-          <div className="group transition w-[280px] h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4">
-            <header className="h-[135px] w-full relative flex justify-center bg-[#e2b349] rounded-3xl">
-              <Image
-                src="/images/dog.png"
-                fill
-                style={{
-                  objectFit: 'contain',
-                }}
-                alt="Imagem de cachorro"
-                blurDataURL="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcanaltech.com.br%2Fempresa%2Fgoogle%2F&psig=AOvVaw1MnacU9SUXQkEXKDWcE5gP&ust=1718305074968000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjGsK7f1oYDFQAAAAAdAAAAABAE"
-                placeholder="blur"
-              />
-            </header>
-            <div className="flex items-center flex-col">
-              <div className="trasition relative outline outline-white w-12 h-12 z-10 bg-[#F4D35E] group-hover:outline-[#0D3B66] flex justify-center rounded-xl -mt-5">
-                <Image
-                  src="/icons/icon-card-details.svg"
-                  alt="Ícone cachorro"
-                  width={15}
-                  height={15.56}
-                />
-              </div>
-              <span className="text-[#0D3B66] text-lg font-bold group-hover:text-white transition-all">
-                Alfredo
-              </span>
-            </div>
-          </div>
-
-          <div className="group transition w-[280px] h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4">
-            <header className="h-[135px] relative flex justify-center bg-[#e2b349] rounded-3xl">
-              <Image
-                src="/images/dog.png"
-                fill
-                style={{
-                  objectFit: 'contain',
-                }}
-                alt="Imagem de cachorro"
-                blurDataURL="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcanaltech.com.br%2Fempresa%2Fgoogle%2F&psig=AOvVaw1MnacU9SUXQkEXKDWcE5gP&ust=1718305074968000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjGsK7f1oYDFQAAAAAdAAAAABAE"
-                placeholder="blur"
-              />
-            </header>
-            <div className="flex items-center flex-col">
-              <div className="trasition relative outline outline-white w-12 h-12 z-10 bg-[#F4D35E] group-hover:outline-[#0D3B66] flex justify-center rounded-xl -mt-5">
-                <Image
-                  src="/icons/icon-card-details.svg"
-                  alt="Ícone cachorro"
-                  width={15}
-                  height={15.56}
-                />
-              </div>
-              <span className="text-[#0D3B66] text-lg font-bold group-hover:text-white transition-all">
-                Alfredo
-              </span>
-            </div>
-          </div>
-
-          <div className="group transition w-[280px] h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4">
-            <header className="h-[135px] relative flex justify-center bg-[#e2b349] rounded-3xl">
-              <Image
-                src="/images/dog.png"
-                fill
-                style={{
-                  objectFit: 'contain',
-                }}
-                alt="Imagem de cachorro"
-                blurDataURL="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcanaltech.com.br%2Fempresa%2Fgoogle%2F&psig=AOvVaw1MnacU9SUXQkEXKDWcE5gP&ust=1718305074968000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjGsK7f1oYDFQAAAAAdAAAAABAE"
-                placeholder="blur"
-              />
-            </header>
-            <div className="flex items-center flex-col">
-              <div className="trasition relative outline outline-white w-12 h-12 z-10 bg-[#F4D35E] group-hover:outline-[#0D3B66] flex justify-center rounded-xl -mt-5">
-                <Image
-                  src="/icons/icon-card-details.svg"
-                  alt="Ícone cachorro"
-                  width={15}
-                  height={15.56}
-                />
-              </div>
-              <span className="text-[#0D3B66] text-lg font-bold group-hover:text-white transition-all">
-                Alfredo
-              </span>
-            </div>
-          </div>
-
-          <div className="group transition w-[280px] h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4">
-            <header className="h-[135px] relative flex justify-center bg-[#e2b349] rounded-3xl">
-              <Image
-                src="/images/dog.png"
-                fill
-                style={{
-                  objectFit: 'contain',
-                }}
-                alt="Imagem de cachorro"
-                blurDataURL="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcanaltech.com.br%2Fempresa%2Fgoogle%2F&psig=AOvVaw1MnacU9SUXQkEXKDWcE5gP&ust=1718305074968000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjGsK7f1oYDFQAAAAAdAAAAABAE"
-                placeholder="blur"
-              />
-            </header>
-            <div className="flex items-center flex-col">
-              <div className="trasition relative outline outline-white w-12 h-12 z-10 bg-[#F4D35E] group-hover:outline-[#0D3B66] flex justify-center rounded-xl -mt-5">
-                <Image
-                  src="/icons/icon-card-details.svg"
-                  alt="Ícone cachorro"
-                  width={15}
-                  height={15.56}
-                />
-              </div>
-              <span className="text-[#0D3B66] text-lg font-bold group-hover:text-white transition-all">
-                Alfredo
-              </span>
-            </div>
-          </div>
-        </div>
+        <AnimalCard>
+          {[0, 1, 2, 3, 4].map((i) => (
+            <AnimalCardDetails key={i} name="Alfredo" />
+          ))}
+        </AnimalCard>
       </main>
     </section>
   )
