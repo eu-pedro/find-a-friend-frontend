@@ -1,8 +1,19 @@
+'use client'
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 export default function HomePage() {
+  const { push } = useRouter()
   return (
-    <section className="bg-red-300">
+    <section className="bg-red-light">
       <main className="flex flex-col min-h-screen max-w-[1212px] mx-auto pt-20">
         <Image
           src="/logo-with-description.svg"
@@ -31,28 +42,34 @@ export default function HomePage() {
           <div className="flex items-center">
             <span className="text-base text-white mr-3">Busque um amigo: </span>
             <div className="flex gap-3">
-              <div className="p-4 border border-white rounded-2xl">
-                <select
-                  name="state"
-                  id="state"
-                  className=" text-white outline-none font-bold bg-red-300"
-                >
-                  <option value="PE">MA</option>
-                </select>
-              </div>
+              <Select>
+                <SelectTrigger className="w-[72px] h-[54px] bg-red-light text-white font-bold justify-center rounded-3xl">
+                  <SelectValue placeholder="MA" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="MA">MA</SelectItem>
+                </SelectContent>
+              </Select>
 
-              <div className="text-white w-[280px] bg-red-500 flex justify-center rounded-3xl">
-                <select
-                  name="city"
-                  id="city"
-                  className="bg-red-500 text-white text-center outline-none border-none font-bold "
-                >
-                  <option value="recife">São Luís</option>
-                </select>
-              </div>
+              <Select>
+                <SelectTrigger className="w-[280px] h-[54px] bg-red-bold rounded-3xl text-white justify-center font-extrabold border-0">
+                  <SelectValue placeholder="São Luís" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem
+                    value="São luís
+                  "
+                  >
+                    São Luís
+                  </SelectItem>
+                </SelectContent>
+              </Select>
             </div>
 
-            <button className="bg-yellow-200 p-4 rounded-2xl border-none outline-none ml-8">
+            <button
+              className="bg-yellow-200 p-4 rounded-2xl border-none outline-none ml-8"
+              onClick={() => push('/animais')}
+            >
               <Image
                 src="/loupe.svg"
                 width={26}
