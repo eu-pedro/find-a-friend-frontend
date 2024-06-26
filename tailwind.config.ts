@@ -21,6 +21,10 @@ const config = {
       backgroundColor: {
         'red-bold': '#E44449',
         'red-light': '#F15156',
+        'filter-animais': '#FBE1E2',
+      },
+      textColor: {
+        'blue-bold': '#0D3B66',
       },
       keyframes: {
         'accordion-down': {

@@ -7,7 +7,7 @@ interface AnimalCardDetailsProps {
 
 export function AnimalCardDetails({ imageUrl, name }: AnimalCardDetailsProps) {
   return (
-    <div className="cursor-pointer group transition w-[280px] h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4">
+    <div className="cursor-pointer group transition w-full h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4">
       <header className="h-[135px] relative flex justify-center bg-[#e2b349] rounded-3xl">
         <Image
           src={imageUrl ?? '/images/dog.png'}

@@ -1,6 +1,13 @@
 import { AnimalCardDetails } from './_components/AnimalCardDetails'
 import { AnimalCard } from './_components/AnimalCard'
 import { Navigation } from '@/presentation/shared/layout'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 export default async function AnimalsPage() {
   return (
@@ -15,9 +22,19 @@ export default async function AnimalsPage() {
             sua cidade
           </p>
 
-          <select name="filter" id="filter">
-            <option value="gato-e-cachorro">Gatos e Cachorros</option>
-          </select>
+          <Select>
+            <SelectTrigger className="w-[210px] bg-filter-animais rounded-3xl font-bold border-0 text-blue-bold text-base">
+              <SelectValue placeholder="Gatos e Cachorros" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem
+                value="MA
+                  "
+              >
+                MA
+              </SelectItem>
+            </SelectContent>
+          </Select>
         </header>
 
         <AnimalCard>
