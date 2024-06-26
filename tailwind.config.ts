@@ -22,9 +22,13 @@ const config = {
         'red-bold': '#E44449',
         'red-light': '#F15156',
         'filter-animais': '#FBE1E2',
+        'light-gray': '#F5F8FA',
       },
       textColor: {
         'blue-bold': '#0D3B66',
+      },
+      borderColor: {
+        'light-gray': '#D3E2E5',
       },
       keyframes: {
         'accordion-down': {
