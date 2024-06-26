@@ -1,10 +1,8 @@
 'use client'
-
-import { Page } from '@/components/Page/Page'
+import { Banner, Page } from '@/components'
 import { Form } from './Form'
-import { Banner } from '@/components'
 
-export function SinginSection() {
+export function LoginSection() {
   return (
     <Page>
       <section className="h-[661px] flex gap-32">
@@ -12,10 +10,10 @@ export function SinginSection() {
 
         <div className="flex flex-col">
           <h1 className="text-blue-bold font-bold text-5xl text-left pt-20">
-            Boas-vindas!
+            Faça seu login
           </h1>
 
-          <Form.Singin />
+          <Form.Login />
         </div>
       </section>
     </Page>
