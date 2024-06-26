@@ -23,6 +23,7 @@ const config = {
         'red-light': '#F15156',
         'filter-animais': '#FBE1E2',
         'light-gray': '#F5F8FA',
+        'blue-bold': '#0D3B66',
       },
       textColor: {
         'blue-bold': '#0D3B66',
