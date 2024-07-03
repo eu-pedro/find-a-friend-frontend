@@ -1,3 +1,4 @@
+
 import { AnimalDetails } from './_components/animal-details'
 import { AnimalCard } from './_components/animal-card'
 import { Navigation } from '@/presentation/shared/layout'
@@ -11,7 +12,7 @@ import {
 import data from '@/data/data.json'
 
 export default async function AnimalsPage() {
-  const animalsTotalLenght = data.animals.length
+  const totalAnimalsLength = data.animals.length
 
   return (
     <section className="h-screen w-screen flex">
@@ -22,7 +23,7 @@ export default async function AnimalsPage() {
           <p className="text-xl">
             Encontre{' '}
             <span className="text-[#0d3b66] font-extrabold">
-              {animalsTotalLenght} amigos
+              {totalAnimalsLength} amigos
             </span>{' '}
             na sua cidade
           </p>
