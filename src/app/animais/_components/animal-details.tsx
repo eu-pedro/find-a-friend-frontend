@@ -1,16 +1,25 @@
 import Image from 'next/image'
 
-interface AnimalCardDetailsProps {
-  imageUrl?: string
+interface AnimalProps {
+  id: number
   name: string
+  image_url: string
+  age: string
+  energy_level: number
+  size: string
+  independence_level: string
 }
 
-export function AnimalCardDetails({ imageUrl, name }: AnimalCardDetailsProps) {
+interface AnimalDetailsProps {
+  animal: AnimalProps
+}
+
+export function AnimalDetails({ animal }: AnimalDetailsProps) {
   return (
     <div className="cursor-pointer group transition w-full h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4">
       <header className="h-[135px] relative flex justify-center bg-[#e2b349] rounded-3xl">
         <Image
-          src={imageUrl ?? '/images/dog.png'}
+          src={animal.image_url ?? '/images/dog.png'}
           fill
           style={{
             objectFit: 'contain',
@@ -28,7 +37,7 @@ export function AnimalCardDetails({ imageUrl, name }: AnimalCardDetailsProps) {
           />
         </div>
         <span className="text-[#0D3B66] text-lg font-bold group-hover:text-white transition-all">
-          {name}
+          {animal.name}
         </span>
       </div>
     </div>

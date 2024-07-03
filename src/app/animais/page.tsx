@@ -1,5 +1,5 @@
-import { AnimalCardDetails } from './_components/AnimalCardDetails'
-import { AnimalCard } from './_components/AnimalCard'
+import { AnimalDetails } from './_components/animal-details'
+import { AnimalCard } from './_components/animal-card'
 import { Navigation } from '@/presentation/shared/layout'
 import {
   Select,
@@ -8,8 +8,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import data from '@/data/data.json'
 
 export default async function AnimalsPage() {
+  const animalsTotalLenght = data.animals.length
+
   return (
     <section className="h-screen w-screen flex">
       <Navigation />
@@ -18,8 +21,10 @@ export default async function AnimalsPage() {
         <header className="flex justify-between mb-14">
           <p className="text-xl">
             Encontre{' '}
-            <span className="text-[#0d3b66] font-extrabold">324 amigos</span> na
-            sua cidade
+            <span className="text-[#0d3b66] font-extrabold">
+              {animalsTotalLenght} amigos
+            </span>{' '}
+            na sua cidade
           </p>
 
           <Select>
@@ -38,8 +43,8 @@ export default async function AnimalsPage() {
         </header>
 
         <AnimalCard>
-          {[0, 1, 2, 3, 4].map((i) => (
-            <AnimalCardDetails key={i} name="Alfredo" />
+          {data.animals.map((animal) => (
+            <AnimalDetails animal={animal} key={animal.id} />
           ))}
         </AnimalCard>
       </main>
