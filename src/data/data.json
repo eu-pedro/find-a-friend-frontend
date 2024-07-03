@@ -1,0 +1,58 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Bolt",
+      "image_url": "/dog.png",
+      "age": "puppy",
+      "energy_level": 3,
+      "size": "small",
+      "independence_level": "low"
+    },
+    {
+      "id": 2,
+      "name": "Max",
+      "image_url": "/dog.png",
+      "age": "adolescent",
+      "energy_level": 2,
+      "size": "medium",
+      "independence_level": "medium"
+    },
+    {
+      "id": 3,
+      "name": "Luna",
+      "image_url": "/dog.png",
+      "age": "adult",
+      "energy_level": 1,
+      "size": "large",
+      "independence_level": "high"
+    },
+    {
+      "id": 4,
+      "name": "Rex",
+      "image_url": "/dog.png",
+      "age": "puppy",
+      "energy_level": 3,
+      "size": "medium",
+      "independence_level": "low"
+    },
+    {
+      "id": 5,
+      "name": "Bella",
+      "image_url": "/dog.png",
+      "age": "adolescent",
+      "energy_level": 2,
+      "size": "small",
+      "independence_level": "medium"
+    },
+    {
+      "id": 6,
+      "name": "Rocky",
+      "image_url": "/dog.png",
+      "age": "adult",
+      "energy_level": 1,
+      "size": "large",
+      "independence_level": "high"
+    }
+  ]  
+}
