@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface AnimalProps {
   id: number
@@ -16,7 +17,10 @@ interface AnimalDetailsProps {
 
 export function AnimalDetails({ animal }: AnimalDetailsProps) {
   return (
-    <div className="cursor-pointer group transition w-full h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4">
+    <Link
+      href="/"
+      className="cursor-pointer group transition w-full h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4"
+    >
       <header className="h-[135px] relative flex justify-center bg-[#e2b349] rounded-3xl">
         <Image
           src={animal.image_url ?? '/images/dog.png'}
@@ -40,6 +44,6 @@ export function AnimalDetails({ animal }: AnimalDetailsProps) {
           {animal.name}
         </span>
       </div>
-    </div>
+    </Link>
   )
 }
