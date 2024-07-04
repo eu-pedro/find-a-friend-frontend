@@ -24,6 +24,8 @@ const config = {
         'filter-animais': '#FBE1E2',
         'light-gray': '#F5F8FA',
         'blue-bold': '#0D3B66',
+        'yellow-bold': '#F4D35E',
+        'pink-100': '#fdeced',
       },
       textColor: {
         'blue-bold': '#0D3B66',

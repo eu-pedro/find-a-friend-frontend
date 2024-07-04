@@ -18,7 +18,7 @@ interface AnimalDetailsProps {
 export function AnimalDetails({ animal }: AnimalDetailsProps) {
   return (
     <Link
-      href="/"
+      href={`/animais/detalhes-do-animal/${animal.id}`}
       className="cursor-pointer group transition w-full h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4"
     >
       <header className="h-[135px] relative flex justify-center bg-[#e2b349] rounded-3xl">
