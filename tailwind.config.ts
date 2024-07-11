@@ -26,12 +26,15 @@ const config = {
         'blue-bold': '#0D3B66',
         'yellow-bold': '#F4D35E',
         'pink-100': '#fdeced',
+        'green-light': '#34C759',
       },
       textColor: {
         'blue-bold': '#0D3B66',
+        'red-light': '#F15156',
       },
       borderColor: {
         'light-gray': '#D3E2E5',
+        'red-light': '#F15156',
       },
       keyframes: {
         'accordion-down': {
