@@ -1,4 +1,3 @@
-
 import { AnimalDetails } from './_components/animal-details'
 import { AnimalCard } from './_components/animal-card'
 import { Navigation } from '@/presentation/shared/layout'
