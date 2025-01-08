@@ -13,16 +13,17 @@ import { useRouter } from 'next/navigation'
 export default function HomePage() {
   const { push } = useRouter()
   return (
-    <section className="bg-red-light">
-      <main className="flex flex-col min-h-screen max-w-[1212px] mx-auto pt-20">
+    <section className="bg-red-light flex justify-center items-center h-full w-full">
+      <main className="flex flex-col max-w-[1212px] mx-auto ">
         <Image
           src="/logo-with-description.svg"
           width={215}
           height={58}
-          alt="Logo com descrição"
+          alt="Find a Friend Logo"
+          className="mb-16"
         />
 
-        <div className="flex justify-between items-center ">
+        <div className="flex flex-row justify-between items-center gap-32">
           <h1 className="text-7xl max-w-[487px] text-white font-extrabold">
             Leve a felicidade para o seu lar
           </h1>
