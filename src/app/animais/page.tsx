@@ -1,3 +1,5 @@
+'use client'
+
 import { AnimalDetails } from './_components/animal-details'
 import { AnimalCard } from './_components/animal-card'
 import { Navigation } from '@/presentation/shared/layout'
@@ -9,15 +11,23 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import data from '@/data/data.json'
+import { Button } from '@/components/ui/button'
+import { ArrowLeft } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
-export default async function AnimalsPage() {
+export default function AnimalsPage() {
   const totalAnimalsLength = data.animals.length
+
+  const { back } = useRouter()
 
   return (
     <section className="h-screen w-screen flex">
       <Navigation />
 
-      <main className="bg-[#FDECED] flex-grow pr-28 pl-8 pt-36">
+      <main className="bg-[#FDECED] flex-grow pr-28 pl-8">
+        <Button className="rounded-full h-14 mt-9 mb-7" onClick={() => back()}>
+          <ArrowLeft />
+        </Button>
         <header className="flex justify-between mb-14">
           <p className="text-xl">
             Encontre{' '}
@@ -32,12 +42,7 @@ export default async function AnimalsPage() {
               <SelectValue placeholder="Gatos e Cachorros" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem
-                value="MA
-                  "
-              >
-                MA
-              </SelectItem>
+              <SelectItem value="Gatos e Cachorros">MA</SelectItem>
             </SelectContent>
           </Select>
         </header>
