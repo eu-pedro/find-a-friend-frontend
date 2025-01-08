@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 interface AnimalProps {
   id: number
@@ -16,10 +16,12 @@ interface AnimalDetailsProps {
 }
 
 export function AnimalDetails({ animal }: AnimalDetailsProps) {
+  const { push } = useRouter()
+
   return (
-    <Link
-      href={`/animais/detalhes-do-animal/${animal.id}`}
+    <button
       className="cursor-pointer group transition w-full h-[209px] bg-white hover:bg-[#0D3B66] rounded-3xl px-1 pt-1 pb-4"
+      onClick={() => push(`/animais/detalhes-do-animal/${animal.id}`)}
     >
       <header className="h-[135px] relative flex justify-center bg-[#e2b349] rounded-3xl">
         <Image
@@ -44,6 +46,6 @@ export function AnimalDetails({ animal }: AnimalDetailsProps) {
           {animal.name}
         </span>
       </div>
-    </Link>
+    </button>
   )
 }
