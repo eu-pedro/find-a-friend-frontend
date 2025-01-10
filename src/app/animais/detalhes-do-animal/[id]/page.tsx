@@ -1,8 +1,9 @@
 'use client'
 
-import { ArrowLeft, CircleAlert, Scan, Zap } from 'lucide-react'
+import { ArrowLeft, CircleAlert } from 'lucide-react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
+import { FeatureCard } from '../_components/feature-card'
 
 export default function AnimalDetailsPage() {
   const { back } = useRouter()
@@ -40,51 +41,9 @@ export default function AnimalDetailsPage() {
           </span>
 
           <div className="flex items-center gap-3">
-            {/* {
-              COMPONENTIZAR.
-            } */}
-            <div className="w-full flex flex-col gap-4 p-6 border-[#E7EBF0] border-2 rounded-3xl">
-              <div className="flex items-center gap-2">
-                <Zap size={18} className="" />
-                <Zap size={18} className="" />
-                <Zap size={18} className="" />
-                <Zap size={18} className="" />
-                <Zap size={18} className="opacity-10" />
-              </div>
-              <h4 className="leading-tight text-nowrap text-blue-bold font-semibold text-lg">
-                Muita energia
-              </h4>
-            </div>
-
-            <div className="w-full flex flex-col gap-4 p-6 border-[#E7EBF0] border-2 rounded-3xl">
-              <div className="flex items-center gap-2">
-                <Scan size={18} className="" />
-              </div>
-              <h4 className="leading-tight text-nowrap text-blue-bold font-semibold text-lg">
-                Ambiente amplo
-              </h4>
-            </div>
-
-            <div className="w-full flex flex-col gap-4 p-6 border-[#E7EBF0] border-2 rounded-3xl">
-              <div className="flex items-center gap-2">
-                <Image src="/full-dot.svg" alt="" width={12} height={12} />
-                <Image
-                  src="/transparent-dot.svg"
-                  alt=""
-                  width={12}
-                  height={12}
-                />
-                <Image
-                  src="/transparent-dot.svg"
-                  alt=""
-                  width={12}
-                  height={12}
-                />
-              </div>
-              <h4 className="leading-tight text-nowrap text-blue-bold font-semibold text-lg">
-                Pequenino
-              </h4>
-            </div>
+            <FeatureCard type="energy" feature="Muita energia" />
+            <FeatureCard type="space" feature="Ambiente amplo" />
+            <FeatureCard type="size" feature="Pequenino" />
           </div>
 
           <div className="w-full h-0.5 bg-[#D3E2E5] my-14" />
