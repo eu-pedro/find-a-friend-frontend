@@ -1,6 +1,6 @@
 'use client'
 import { Banner, Page } from '@/components'
-import { Form } from './Form'
+import { Form } from './form'
 
 export function LoginSection() {
   return (
