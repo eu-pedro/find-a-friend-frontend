@@ -42,7 +42,9 @@ export default function AnimalsPage() {
               <SelectValue placeholder="Gatos e Cachorros" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="Gatos e Cachorros">MA</SelectItem>
+              <SelectItem value="Gatos e Cachorros">
+                Gatos e Cachorros
+              </SelectItem>
             </SelectContent>
           </Select>
         </header>
