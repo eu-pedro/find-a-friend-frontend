@@ -6,14 +6,22 @@ import { useRouter } from 'next/navigation'
 import { FeatureCard } from '../_components/feature-card'
 import { AdoptionRequirement } from '../_components/adoption-requirement'
 import { Separator } from '../_components/separator'
+import { APP_ROUTES } from '@/shared/constants/routes'
 
 export default function AnimalDetailsPage() {
-  const { back } = useRouter()
+  const { back, push } = useRouter()
 
   return (
     <section className="min-h-screen w-full flex gap-80 items-stretch bg-pink-100">
       <aside className="fixed min-h-[620px] w-fit bg-red-light flex flex-col justify-between py-8 px-6">
-        <Image src="/logo.svg" width={45} height={46.67} alt="" />
+        <Image
+          src="/logo.svg"
+          width={45}
+          height={46.67}
+          alt="Logo"
+          onClick={() => push(APP_ROUTES.HOME)}
+          className="hover:cursor-pointer"
+        />
 
         <button
           className="bg-yellow-bold p-3 rounded-2xl hover:cursor-pointer"
