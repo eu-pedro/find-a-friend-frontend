@@ -1,9 +1,11 @@
 'use client'
 
-import { ArrowLeft, CircleAlert } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { FeatureCard } from '../_components/feature-card'
+import { AdoptionRequirement } from '../_components/adoption-requirement'
+import { Separator } from '../_components/separator'
 
 export default function AnimalDetailsPage() {
   const { back } = useRouter()
@@ -46,43 +48,19 @@ export default function AnimalDetailsPage() {
             <FeatureCard type="size" feature="Pequenino" />
           </div>
 
-          <div className="w-full h-0.5 bg-[#D3E2E5] my-14" />
+          <Separator />
 
           <h3 className="mb-14 font-bold text-blue-bold text-3xl	">
             Requesitos para adoção
           </h3>
 
           <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-3 w-full border-2 border-red-light  py-3 px-8 rounded-xl bg-gradient-to-r from-[#FEEFEF] to-white">
-              <CircleAlert className="text-red-light" size={20} />
+            <AdoptionRequirement requirement="Local grande para o animal correr e brincar." />
+            <AdoptionRequirement requirement="Proibido apartamento." />
+            <AdoptionRequirement requirement="Ambiente frio, pois possui muito pelo.." />
+            <AdoptionRequirement requirement="Cão com intolerância a lactose." />
 
-              <span className="text-red-light border-red-light font-semibold text-lg">
-                Local grande para o animal correr e brincar.
-              </span>
-            </div>
-            <div className="flex gap-3 w-full border-2 border-red-light  py-3 px-8 rounded-xl bg-gradient-to-r from-[#FEEFEF] to-white">
-              <CircleAlert className="text-red-light" />
-
-              <span className="text-red-light border-red-light">
-                Proibido apartamento
-              </span>
-            </div>
-            <div className="flex gap-3 w-full border-2 border-red-light  py-3 px-8 rounded-xl bg-gradient-to-r from-[#FEEFEF] to-white">
-              <CircleAlert className="text-red-light" />
-
-              <span className="text-red-light border-red-light">
-                Ambiente frio, pois possui muito pelo.
-              </span>
-            </div>
-            <div className="flex gap-3 w-full border-2 border-red-light  py-3 px-8 rounded-xl bg-gradient-to-r from-[#FEEFEF] to-white">
-              <CircleAlert className="text-red-light" />
-
-              <span className="text-red-light border-red-light">
-                Cão com intolerância a lactose.
-              </span>
-            </div>
-
-            <div className="w-full h-0.5 bg-[#D3E2E5] my-14" />
+            <Separator />
 
             <button className="w-full text-lg bg-green-light flex items-center justify-center gap-4 font-extrabold text-white py-4 rounded-3xl">
               <Image
