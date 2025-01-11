@@ -1,6 +1,6 @@
 'use client'
 
-import { Page } from '@/components/Page/Page'
+import { Page } from '@/components/page/page'
 import { Form } from './Form'
 import { Banner } from '@/components'
 

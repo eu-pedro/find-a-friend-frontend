@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 import { Eye, EyeOff } from 'lucide-react'
 import { useState } from 'react'
 
@@ -10,12 +11,12 @@ export function Form() {
   const [confirmPassword, setConfirmPassword] = useState(false)
 
   return (
-    <form className="w-[488px] h-full flex flex-col justify-around">
-      <div className="">
+    <form className="px-10 w-screen lg:p-0 lg:w-[488px] h-full flex flex-col">
+      <div className="mb-20 lg:mb-28">
         <fieldset className="flex flex-col gap-2">
-          <label htmlFor="email" className="text-blue-bold text-base font-bold">
+          <Label htmlFor="email" className="text-blue-bold text-base font-bold">
             Email
-          </label>
+          </Label>
           <Input
             type="text"
             id="email"
@@ -25,12 +26,12 @@ export function Form() {
         </fieldset>
 
         <fieldset className="flex flex-col gap-2 mt-4 relative">
-          <label
+          <Label
             htmlFor="password"
             className="text-blue-bold text-base font-bold"
           >
             Senha
-          </label>
+          </Label>
           <Input
             type={password ? 'text' : 'password'}
             id="password"
@@ -51,12 +52,12 @@ export function Form() {
         </fieldset>
 
         <fieldset className="flex flex-col gap-2 mt-4 relative">
-          <label
+          <Label
             htmlFor="confirmPassword"
             className="text-blue-bold text-base font-bold"
           >
             Senha
-          </label>
+          </Label>
           <Input
             type={confirmPassword ? 'text' : 'password'}
             id="confirmPassword"

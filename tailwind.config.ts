@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        laptop: '1104px',
+      },
       backgroundColor: {
         'red-bold': '#E44449',
         'red-light': '#F15156',

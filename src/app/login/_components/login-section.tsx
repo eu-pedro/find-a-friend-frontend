@@ -1,5 +1,5 @@
 'use client'
-import { Banner, Page } from '@/components'
+import { Banner, Page, Title } from '@/components'
 import { Form } from './form'
 
 export function LoginSection() {
@@ -9,9 +9,7 @@ export function LoginSection() {
         <Banner.Section />
 
         <div className="flex flex-col">
-          <h1 className="text-blue-bold font-bold text-5xl text-left pt-20">
-            Faça seu login
-          </h1>
+          <Title title="Faça seu Login" />
 
           <Form.Login />
         </div>
